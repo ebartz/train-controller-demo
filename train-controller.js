@@ -15,7 +15,7 @@ const PoweredUP = require("node-poweredup");
 const poweredUP = new PoweredUP.PoweredUP();
 
 function getSpeed(a, b) {
-  var speed = Math.round((a*10) - (b*10));
+  var speed = Math.round((b*20) - (a*20));
   if ( speed < -100 ){ speed=-100; }
   if ( speed > 100  ){ speed=100;  }
   return speed;
