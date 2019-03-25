@@ -21,7 +21,6 @@ function getSpeed(a, b) {
   return speed;
 }
 
-
 poweredUP.scan(); // Start scanning for trains
 
 poweredUP.on("discover", async (hub) => { // Wait to discover a train
@@ -37,7 +36,6 @@ poweredUP.on("discover", async (hub) => { // Wait to discover a train
       console.log('Connected to socket: ' + socket.connected); // true
     });
 
-    
     // get data from socket
     var data;
     socket.on('scores', (json) => {
