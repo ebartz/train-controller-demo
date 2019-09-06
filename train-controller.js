@@ -45,6 +45,7 @@ poweredUP.on("discover", async (hub) => { // Wait to discover a train
 
       var speed = getSpeed(a, b);
       hub.setMotorSpeed('A', speed);
+      console.log( 'Battery: ' + hub.batteryLevel );
       console.log(speed);
 
     });
